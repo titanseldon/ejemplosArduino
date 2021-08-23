@@ -1,12 +1,15 @@
-#define PIN_LED 12
+//Sketch para hacer parpadear un led conectado
+//al pin digital 9 del Arduino Nano.
 
-void setup() {
-  pinMode(PIN_LED, OUTPUT);
+#define PIN_LED 9
+
+void setup() {  
+    pinMode(PIN_LED, OUTPUT);    
 }
 
 void loop() {
   digitalWrite(PIN_LED, HIGH);
-  delay(200);
+  delay(500);
   digitalWrite(PIN_LED, LOW);
-  delay(100);
+  delay(500);
 }
